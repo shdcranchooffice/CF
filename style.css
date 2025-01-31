@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Outfit';
+    background: linear-gradient(#fdfdfd,#d4deff);
+}
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact-left-title h2{
+    font-weight: 600;
+    color: #0089a1;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.contact-left-title hr{
+    border: none;
+    width: 400px;
+    height: 5px;
+    background-color: #0089a1;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color:#666;
+    border-radius: 50px;
+}
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.contact-inputs:focus{
+    border: 2px solid #0089a2;
+}
+.contact-inputs::placeholder{
+    color:#a9a9a9;
+}
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg,#0089a2,#e2ddde);
+    cursor: pointer;
+}
+.contact-right img{
+    width: 500px;
+}
+@media (max-width:800px) {
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right{
+        display:none;
+    }
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-container label {
+    margin-left: 10px;
+    text-align: left;
+    max-width: 50%; /* Ensure the text does not pass the centerline */
+    word-wrap: break-word;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    margin-left: 380px; 
+}
+
+.contact-right {
+    margin-right: 380px; 
+}

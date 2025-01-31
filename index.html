@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Sacred Heart Dental Care: Get in touch</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="5c038c93-3bb4-4571-a167-b84bdb419323">
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="phone" name="phone" placeholder="Your Phone Number" class="contact-inputs">
+            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <div class="checkbox-container">
+                <input type="checkbox" name="Opt-in" id="Opt-in">
+                <label for="Opt-in" required >By providing your phone number and/or email while scheduling over the phone/online,
+                     you consent to receiving SMS text(s) by Sacred Heart Dental Care. Msg and data rates may apply.
+                     You may reply “STOP” to opt out. Reply “HELP” for support.</label>
+            </div>
+            <button type="submit"></button>
+        </form>
+        <div class="contact-right">
+            <img src="assets/dental_logo3.png">
+
+</body>
+
+</html>
